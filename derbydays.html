@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Derby Days</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/pace.css">
+    <script src ="js/pace.min.js"></script>
+
+    <!-- Favicon/TouchIcon/TileIcon links -->
+    <!-- Apple touch icon-->
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon-152x152-precomposed.png">
+    <!-- Browsers will select the appropriate .png -->
+    <link rel="icon" href="img/favicon/favicon-16.png" sizes="16x16">
+    <link rel="icon" href="img/favicon/favicon-32.png" sizes="32x32">
+    <link rel="icon" href="img/favicon/favicon-48.png" sizes="48x48">
+    <link rel="icon" href="img/favicon/favicon-64.png" sizes="64x64">
+    <link rel="icon" href="img/favicon/favicon-128.png" sizes="128x128">
+    <!-- Internet explorer gets it's own favicon because it's special-->
+    <!-- IE will ignore the other icons and use this because it is in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Microsoft TileImage and background color -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="img/favicon/tileicon.png">
+
+    <!-- Bootstrap styling -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <!-- My custom styles -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Import google font 'Lato' -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+    <!-- Modernizr -->
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <noscript><style> .jsonly { display: none } </style></noscript>
+
+</head>
+<body id="fullScreen" data-spy="scroll" data-target=".navbar-collapse" data-offset="80">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+            <div class="container">
+                <noscript>
+                    <div id="warning">
+                        <p>It looks like you may have disabled Javascript! Please allow RyanMadden.net to run scripts to see the site as it was meant to be!</p>
+                    </div>
+                </noscript>
+                <div id="cover" class="jsonly"></div>
+            </div>
+            <div id="wrapper" style="display: block;">
+                <div id="content" class="container">
+                    <div id="about-title">
+                        <h2>Derby Days</h2>
+                        <div class="hrule"></div>
+                    </div>
+                    <div class="row">  
+                        <div class="hidden-xs col-sm-2">
+                            <h3>Vitals</h3>
+                            <div class="divider"></div>
+                            <h5>Project Type</h5>
+                            <p>Website</p>
+                            <div class="divider"></div>
+                            <h5>Begun</h5>
+                            <p>November 2014</p>
+                            <div class="divider"></div>
+                            <h5>My Role</h5>
+                            <p>Web Design, Development</p>
+                            <div class="divider"></div>
+                            <h5>Tools</h5>
+                            <p>PHP, Stripe, Bootstrap</p>
+                        </div>              
+                        <div class="col-xs-12 col-sm-4">
+                            <div id="carousel-1" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators carousel-black">
+                                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-1" data-slide-to="1"></li>
+                                <li data-target="#carousel-1" data-slide-to="2"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="img/derbydays/derby-splash.png" alt="Splash Page">
+                                    <div class="carousel-caption"></div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/derbydays/derby-welcome.png" alt="Welcome Section">
+                                    <div class="carousel-caption"></div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/derbydays/derby-donate.png" alt="Donate Box">
+                                    <div class="carousel-caption"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <h3 id="about-header">About</h3>
+                        <a class="btn btn-default btn-live" href="https://derbydays.herokuapp.com" role="button" target="_blank">Live Site</a>
+                        <a class="btn btn-default btn-live" href="https://github.com/ryanmadden/derbydays" role="button" target="_blank">GitHub Repo</a>
+                        <!-- <a class="git-link" href="https://github.com/ryanmadden/derbydays" target="_blank">
+                            <img class="center-block" src="img/icon-github.jpg" alt="GitHub" id="site-git"/>
+                        </a> -->
+                        <p id="about-text">During the winter of 2014 I built a website for my fraternity’s yearly weeklong philanthropy: Derby Days. The goals of the website were to demonstrate the purpose of the philanthropy, promote the philanthropy’s schedule and sponsors, and accept credit card donations. The credit card donation functionality (which I implemented using the Stripe API) was the most challenging and rewarding part of this project. It exposed me to PHP for the first time and taught me how to work with third-party API documentation.</p>
+                        <p>In seven days from February 8th to 14th, the website I built brought in over $4,000 of donations which went directly to Lurie Children’s Hospital of Chicago. I’m proud of the work I did creating the website from start to finish and of the positive effect it had on the philanthropy’s fundraising and ultimately the patients at the Children’s Hospital.</p>
+                        <p>While the philanthropy was live, this website was available at derbydaysNU.com. Since I am not in control of the derbydaysNU domain I have linked to heroku above to ensure continued accessibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+        <script src="js/vendor/jquery.color-2.1.2.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-54337608-1');ga('send','pageview');
+        </script>
+    </body>
+    </html>
