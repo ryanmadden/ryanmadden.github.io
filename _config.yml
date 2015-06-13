@@ -1,1 +1,3 @@
 permalink: /blog/:title
+sass:
+    sass_dir: sass
