@@ -1,3 +1,5 @@
+---
+---
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
@@ -14,9 +16,18 @@
 		xsmall: '(max-width: 480px)'
 	));
 
+	@include skel-min-breakpoints((
+		xlarge: '(min-width: 1281px)',
+		large: '(min-width: 981px)',
+		medium: '(min-width: 737px)',
+		small: '(min-width: 481px)',
+		xsmall: '(min-width: 0px)'
+	));
+
 	@include skel-layout((
 		reset: 'full',
 		boxModel: 'border',
+		conditionals: 'true',
 		containers: 80em,
 		grid: ( gutters: 2em ),
 		breakpoints: (

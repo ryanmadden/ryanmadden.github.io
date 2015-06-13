@@ -348,6 +348,14 @@
 	}
 
 	///
+	/// Sets min-breakpoints.
+	/// @param {map} $x Min-Breakpoints.
+	///
+	@mixin skel-min-breakpoints($x: ()) {
+		$min-breakpoints: $x !global;
+	}
+
+	///
 	/// Initializes layout module.
 	/// @param {map} config Config.
 	///
@@ -381,6 +389,15 @@
 				/* Box Model */
 
 				@include boxModel($x);
+
+			}
+
+		// Conditionals.
+			$x: map-get($config, 'conditionals');
+
+			@if $x {
+
+				@include conditionals($x);
 
 			}
 
@@ -538,6 +555,43 @@
 
 		}
 
+	}
+
+	/// Create calsses for not-$breakpoint and only-$breakpoint.
+	/// @param {string} $condition Condition (default is 'false')
+	@mixin conditionals($condition: 'false') {
+
+		@if $condition == 'true' {
+
+			// Create classes to hide/show elements per breakpoint
+				@each $name in map-keys($breakpoints) {
+
+					// Create @media block with min and max widths.
+						@media screen and #{map-get($min-breakpoints, $name)} and #{map-get($breakpoints, $name)} {
+
+							// Iterate through the breakpoints again to write the rules.
+								@each $nameIter in map-keys($breakpoints) {
+
+									$x: '' + $nameIter;
+
+									.not-#{$x} {
+
+										@if $nameIter == $name {
+											display: none !important;
+										}
+									}
+									.only-#{$x} {
+										@if $nameIter != $name {
+											display: none !important
+										}
+									}
+								}
+						}
+
+				}
+
+
+		}
 	}
 
 	/// Vendorizes a declaration's property and/or value(s).
