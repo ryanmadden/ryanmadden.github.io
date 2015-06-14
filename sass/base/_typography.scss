@@ -30,13 +30,13 @@
 		}
 
 		@include breakpoint(xsmall) {
-			font-size: 12pt;
+			font-size: 11pt;
 		}
 	}
 
 	a {
 		color: _palette(accent1, bg);
-		text-decoration: underline;
+		text-decoration: none;
 
 		&:hover {
 			text-decoration: none;
@@ -71,11 +71,13 @@
 	h2 {
 		font-size: 1.75em;
 		line-height: 1.5em;
+		font-weight: _font(weight);
 	}
 
 	h3 {
 		font-size: 1.35em;
 		line-height: 1.5em;
+		font-weight: _font(weight);
 	}
 
 	h4 {
