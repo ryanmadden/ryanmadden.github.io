@@ -8,11 +8,17 @@
 
 #banner {
 
-	background: url('../img/bg.jpg') no-repeat center center, #f6f6f6;
+	background: url('../img/bg.jpg') no-repeat center center, #f6f6f6 none repeat scroll 0% 0%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+
+	-moz-transition: opacity 0.5s ease;
+	-webkit-transition: opacity 0.5s ease;
+	-ms-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+	opacity: 1;
 
 	@include padding(8em, 0);
 	text-align: center;

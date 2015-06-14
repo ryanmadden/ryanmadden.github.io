@@ -23,7 +23,7 @@
 		}
 	}
 
-	body {
+	#top {
 		background: _palette(bg);
 
 		// Prevents animation/transition "flicker" on page load.
@@ -33,11 +33,15 @@
 				@include vendor('animation', 'none !important');
 				@include vendor('transition', 'none !important');
 			}
+
+			> #banner {
+				opacity: 0;
+			}
 		}
 
 	}
 
-	body:after{
+	#top:after{
 		display:none;
 		content: 'url(../bg.jpg)';
 	}
