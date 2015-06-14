@@ -197,6 +197,31 @@
 
 	}
 
+	/// Wraps @content in a @media block using a given minimum breakpoint.
+	/// @param {string} $minbreakpoint Breakpoint.
+	/// @param {map} $queries Additional queries.
+	@mixin minbreakpoint($minbreakpoint: null, $queries: null) {
+
+		$query: 'screen';
+
+		// Breakpoint.
+			@if $minbreakpoint and map-has-key($min-breakpoints, $minbreakpoint) {
+				$query: $query + ' and ' + map-get($min-breakpoints, $minbreakpoint);
+			}
+
+		// Queries.
+			@if $queries {
+				@each $k, $v in $queries {
+					$query: $query + ' and (' + $k + ':' + $v + ')';
+				}
+			}
+
+        @media #{$query} {
+            @content;
+        }
+
+	}
+
 	/// Wraps @content in a @media block targeting a specific orientation.
 	/// @param {string} $orientation Orientation.
 	@mixin orientation($orientation) {
