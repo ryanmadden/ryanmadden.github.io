@@ -17,10 +17,10 @@
 	));
 
 	@include skel-min-breakpoints((
-		xlarge: '(min-width: 1281px)',
-		large: '(min-width: 981px)',
-		medium: '(min-width: 737px)',
-		small: '(min-width: 481px)',
+		xlarge: '(min-width: 1280px)',
+		large: '(min-width: 980px)',
+		medium: '(min-width: 736px)',
+		small: '(min-width: 480px)',
 		xsmall: '(min-width: 0px)'
 	));
 
