@@ -35,7 +35,7 @@
 	}
 
 	a {
-		color: _palette(accent1, fg-bold);
+		color: _palette(accent1, bg);
 		text-decoration: none;
 
 		&:hover {
@@ -83,7 +83,7 @@
 	h4 {
 		font-size: 1.1em;
 		line-height: 1.5em;
-		// color: _palette(accent1, bg);
+		color: _palette(accent1, bg);
 	}
 
 	h5 {

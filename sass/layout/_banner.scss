@@ -14,12 +14,7 @@
 	-o-background-size: cover;
 	background-size: cover;
 
-	-moz-transition: opacity 0.5s ease;
-	-webkit-transition: opacity 0.5s ease;
-	-ms-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease;
-	opacity: 1;
-
+	position: relative;
 	@include padding(8em, 0);
 	text-align: center;
 
@@ -33,6 +28,8 @@
 		display: inline-block;
 		padding: 10px;
 		font-weight: 800;
+		position: relative;
+		z-index: 3;
 	}
 
 	p {
@@ -71,4 +68,23 @@
 	@include breakpoint(xsmall) {
 		@include padding(4em, 2em);
 	}
+	&:after {
+		display: block;
+		content: '';
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		background: _palette(accent1, bg);
+
+		-moz-transition: opacity 1s ease;
+		-webkit-transition: opacity 1s ease;
+		-ms-transition: opacity 1s ease;
+		transition: opacity 1s ease;
+		opacity: 0;
+	}
 }
+
+

@@ -34,14 +34,15 @@
 				@include vendor('transition', 'none !important');
 			}
 
-			> #banner {
-				opacity: 0;
+			> #banner:after {
+				opacity: 1;
 			}
+		}
+		&:before{
+			display: none;
+			content: 'url(../bg.jpg)';
 		}
 
 	}
 
-	#top:after{
-		display:none;
-		content: 'url(../bg.jpg)';
-	}
+	
