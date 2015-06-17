@@ -79,10 +79,10 @@
 		height: 100%;
 		background: _palette(accent1, bg);
 
-		-moz-transition: opacity 1s ease;
-		-webkit-transition: opacity 1s ease;
-		-ms-transition: opacity 1s ease;
-		transition: opacity 1s ease;
+		-moz-transition: opacity 3s ease;
+		-webkit-transition: opacity 3s ease;
+		-ms-transition: opacity 3s ease;
+		transition: opacity 3s ease;
 		opacity: 0;
 	}
 }

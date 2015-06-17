@@ -11,7 +11,7 @@
 	}
 
 	#header {
-		background: darken(_palette(accent2, bg), 12);
+		background: _palette(accent1, bg);
 		color: _palette(accent2, fg);
 		cursor: default;
 		height: 3.25em;
