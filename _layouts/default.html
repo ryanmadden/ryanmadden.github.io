@@ -4,86 +4,69 @@
 <!-- skel-baseline v3.0.0-dev | (c) n33 | skel.io | MIT licensed -->
 <html>
 <head>
-  <title>Baseline</title>
+  <title>Ryan Madden - Blog</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,800' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/main.css" />
 </head>
 <body id="top">
 
   <!-- Header -->
   <header id="header">
-    <h1><a href="#">Baseline</a></h1>
-    <a href="#">Login</a>
-    <a href="#nav">Menu</a>
+    <h1><a href="/">Ryan Madden</a></h1>
+    <a href="/#main" class="not-xsmall nav-link">About</a>
+    <a href="/#projects" class="not-xsmall nav-link">Projects</a>
+    <a href="/blog" class="not-xsmall nav-link">Blog</a>
+    <a href="/#contact" class="not-xsmall nav-link">Contact</a>
+    <a href="#nav" class="only-xsmall nav-menu">Menu</a>
   </header>
 
   <!-- Nav -->
   <nav id="nav">
     <ul class="links">
-      <li><a href="#top">Top</a></li>
-      <li><a href="#content">Content</a></li>
-      <li><a href="#elements">Elements</a></li>
-      <li><a href="#grid">Grid System</a></li>
+      <li><a href="/#main">About</a></li>
+      <li><a href="/#projects">Projects</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
     </ul>
-    <ul class="actions vertical">
+    <!-- <ul class="actions vertical">
       <li><a href="http://skel.io" class="button special fit">Download</a></li>
       <li><a href="http://skel.io" class="button fit">Documentation</a></li>
-    </ul>
+    </ul> -->
   </nav>
 
   <!-- Banner -->
   <section id="banner">
-    <h2>Hi, I'm Baseline</h2>
-    <p>A super simple starting point for projects based on <a href="http://skel.io">Skel</a>.</p>
-    <ul class="actions">
-      <li><a href="#content" class="button special">Content</a></li>
-      <li><a href="#elements" class="button">Elements</a></li>
-      <li><a href="#grid" class="button alt">Grid System</a></li>
-    </ul>
+    <h2>{{ page.title }}</h2>
   </section>
 
   <!-- Main -->
   <div id="main" class="container">
-
-    <!-- Intro -->
     <div class="row">
-      <section class="12u">
+      <div class="-2u 8u$ -1u(medium) 10u$(medium) 12u$(small) 12u$(xsmall)">
         {{ content }}
-      </section>
+      </div>
     </div>
   </div>
 
-  <!-- Footer -->
   <footer id="footer">
     <div class="container">
-      <div class="row double">
-        <div class="6u 12u$(medium)">
-          <h2>Aliquam Interdum</h2>
-          <p>Ornare interdum nascetur enim lobortis nunc amet placerat pellentesque nascetur in adipiscing. Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id. Arcu accumsan faucibus vis ultricies adipiscing ornare ut. Mi accumsan. Justo aliquet massa adipiscing cubilia eu accumsan id lorem ipsum dolor.</p>
-        </div>
-        <div class="3u 6u(medium) 12u$(small)">
-          <h3>Accumsan</h3>
-          <ul class="alt">
-            <li>Nascetur nunc varius commodo.</li>
-            <li>Vis id faucibus montes tempor</li>
-            <li>massa amet lobortis vel.</li>
-            <li>Nascetur nunc varius commodo.</li>
-          </ul>
-        </div>
-        <div class="3u$ 6u$(medium) 12u$(small)">
-          <h3>Faucibus</h3>
-          <ul class="alt">
-            <li>Nascetur nunc varius commodo.</li>
-            <li>Vis id faucibus montes tempor</li>
-            <li>massa amet lobortis vel.</li>
-            <li>Nascetur nunc varius commodo.</li>
+      <div class="row">
+        <div class="-4u 4u 12u$(medium)">
+          <ul class="icons align-center">
+            <li><a href="https://github.com/ryanmadden" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+            <li><a href="http://www.linkedin.com/in/maddenryan" target="_blank" class="icon fa-linkedin"><span class="label">Dribbble</span></a></li>
+            <li><a href="https://vimeo.com/ryanmadden" target="_blank" class="icon fa-vimeo-square"><span class="label">Tumblr</span></a></li>
+            <li><a href="https://twitter.com/ryanmddn" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="https://instagram.com/ryanmddn/" target="_blank" class="icon fa-instagram"><span class="label">Facebook</span></a></li>
+            <li><a href="mailto:ryan@ryanmadden.net" class="icon fa-envelope-o"><span class="label">Instagram</span></a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="copyright">
-      &copy; Untitled. All rights reserved.
+      &copy; Ryan Madden. All rights reserved.
     </div>
   </footer>
 

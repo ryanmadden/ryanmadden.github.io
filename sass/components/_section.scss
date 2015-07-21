@@ -12,6 +12,20 @@
 		}
 	}
 
+	article {
+		@include breakpoint(xlarge) {
+			font-size: 16pt;
+		}
+
+		@include breakpoint(large) {
+			font-size: 14pt;
+		}
+
+		@include breakpoint(medium) {
+			font-size: 12pt;
+		}
+	}
+
 	header {
 		p {
 			color: _palette(fg-light);

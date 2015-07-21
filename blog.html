@@ -38,13 +38,7 @@
 
 	<!-- Banner -->
 	<section id="banner">
-		<h2><!-- Hi, I'm  -->Blog</h2>
-		<!-- <p>A web developer from Seattle</p> -->
-		<!-- <ul class="actions">
-			<li><a href="#content" class="button special">Content</a></li>
-			<li><a href="#elements" class="button">Elements</a></li>
-			<li><a href="#grid" class="button alt">Grid System</a></li>
-		</ul> -->
+		<h2>Blog</h2>
 	</section>
 
 	<!-- Main -->
@@ -53,11 +47,14 @@
 			<p class="align-center">When I write things I leave them here.</p>
 		</header>
 		<div class="row">
-			<div class="-2u 3u -1u(medium) 4u(medium) not-xsmall not-small">
-					{% for post in site.posts %}
+			{% for post in site.posts %}
+				<div class="-2u 6u -1u(medium) 8u(medium)">
 						<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-					{% endfor %}
-			</div>
+				</div>
+				<div class="2u$ 3u$(medium)">
+					<h4>{{ post.date | date: "%B %e, %Y" }}</h4>
+				</div>
+			{% endfor %}
 		</div>
 		
 	</div>
