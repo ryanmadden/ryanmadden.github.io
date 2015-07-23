@@ -25,6 +25,14 @@
 			font-size: 12pt;
 		}
 		line-height: 1.5em;
+		.entry {
+			p {
+				margin-bottom: 1em;
+			}
+			a {
+				text-decoration: underline;
+			}
+		}
 	}
 
 	header {
