@@ -1,94 +1,18 @@
 ---
+layout: default
+title: Posts
 ---
-<!DOCTYPE HTML>
-<!-- skel-baseline v3.0.0-dev | (c) n33 | skel.io | MIT licensed -->
-<html>
-<head>
-	<title>Ryan Madden - Writing</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,600,800' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/css/main.css" />
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-54337608-2', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
-</head>
-<body id="top">
-
-	<!-- Header -->
-	<header id="header">
-		<h1><a href="/">Ryan Madden</a></h1>
-		<a href="/#main" class="not-xsmall nav-link">About</a>
-		<a href="/#projects" class="not-xsmall nav-link">Projects</a>
-		<a href="/posts/list" class="not-xsmall nav-link">Posts</a>
-		<a href="/#contact" class="not-xsmall nav-link">Contact</a>
-		<a href="#nav" class="only-xsmall nav-menu">Menu</a>
-	</header>
-
-	<!-- Nav -->
-	<nav id="nav">
-		<ul class="links">
-			<li><a href="/#main">About</a></li>
-			<li><a href="/#projects">Projects</a></li>
-			<li><a href="/posts/list">Posts</a></li>
-			<li><a href="/#contact">Contact</a></li>
-		</ul>
-		<!-- <ul class="actions vertical">
-			<li><a href="http://skel.io" class="button special fit">Download</a></li>
-			<li><a href="http://skel.io" class="button fit">Documentation</a></li>
-		</ul> -->
-	</nav>
-
-	<!-- Banner -->
-	<section id="banner">
-		<h2>Posts</h2>
-	</section>
-
-	<!-- Main -->
-	<div id="main" class="container">
-		<header>
-			<p class="align-center">When I write things I leave them here.</p>
-		</header>
-		<div class="row">
-			{% for post in site.posts %}
-				<div class="-2u 6u -1u(medium) 8u(medium)">
-						<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-				</div>
-				<div class="2u$ 3u$(medium)">
-					<h4>{{ post.date | date: "%B %e, %Y" }}</h4>
-				</div>
-			{% endfor %}
-		</div>
-		
+<header>
+	<p class="align-center">When I write things I leave them here.</p>
+</header>
+<div class="row">
+	{% for post in site.posts %}
+	<div class="-2u 6u -1u(medium) 8u(medium)">
+		<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	</div>
+	<div class="2u$ 3u$(medium)">
+		<h4>{{ post.date | date: "%B %e, %Y" }}</h4>
+	</div>
+	{% endfor %}
+</div>
 
-	<footer id="footer">
-		<div class="container">
-			<div class="row">
-				<div class="-4u 4u 12u$(medium)">
-					<ul class="icons align-center">
-						<li><a href="https://github.com/ryanmadden" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="http://www.linkedin.com/in/maddenryan" target="_blank" class="icon fa-linkedin"><span class="label">Dribbble</span></a></li>
-						<li><a href="https://vimeo.com/ryanmadden" target="_blank" class="icon fa-vimeo-square"><span class="label">Tumblr</span></a></li>
-						<li><a href="https://twitter.com/ryanmddn" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="https://instagram.com/ryanmddn/" target="_blank" class="icon fa-instagram"><span class="label">Facebook</span></a></li>
-						<li><a href="mailto:ryan@ryanmadden.net" class="icon fa-envelope-o"><span class="label">Instagram</span></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- Scripts -->
-	<script src="/js/skel.min.js"></script>
-	<script src="/js/main.js"></script>
-
-</body>
-</html>
