@@ -3,7 +3,7 @@ layout: post
 title: One Year Later
 ---
 
-On July 27, 2014, I made the first commit to the git repo that would become the first version of ryanmadden.net. It's been nearly a year since then and I'm amazed at everything that has happened. I have an incredible internship at <a href="http://www.dreambox.com/">Dreambox Learning</a> and a healthy list of independent projects keeping me busy. I'm learning every day, building websites for fun, building websites for money, and enjoying the summer with my friends. I've also spent some time reflecting on where I am and how I got here. It all started at my parents' dining room table.
+On July 27, 2014, I made the first commit to the git repo that would become the first version of ryanmadden.net. It's been nearly a year since then and I'm amazed at everything that has happened. I have an incredible internship at [DreamBox Learning](http://www.dreambox.com/ "DreamBox Learning") and a healthy list of independent projects keeping me busy. I'm learning every day, building websites for fun, building websites for money, and enjoying the summer with my friends. I've also spent some time reflecting on where I am and how I got here. It all started at my parents' dining room table.
 
 #### Beginning ####
 The summer after my freshman year of college I decided that I wanted to learn how to build websites. I doggedly worked through the 'HTML & CSS' and 'jQuery' courses on codecademy and -- in perhaps the most prescient moment of my life -- an online course on git courtesy of Lynda. Codecademy reports that I made it 57% of the way through their 'Make a Website' course before bailing to start my own.
