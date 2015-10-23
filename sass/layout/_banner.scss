@@ -84,6 +84,11 @@
 		-ms-transition: opacity 3s ease;
 		transition: opacity 3s ease;
 		opacity: 0;
+
+		-webkit-transition-delay: 500ms;
+	    -moz-transition-delay: 500ms;
+	    -o-transition-delay: 500ms;
+	    transition-delay: 500ms;
 	}
 }
 
