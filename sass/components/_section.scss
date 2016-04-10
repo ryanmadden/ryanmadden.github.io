@@ -29,7 +29,10 @@
 		@include breakpoint(medium) {
 			font-size: 12pt;
 		}
-		line-height: 1.5em;
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+		line-height: 1.6em;
 		.entry {
 			p {
 				margin-bottom: 1em;
