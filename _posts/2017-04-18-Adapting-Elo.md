@@ -17,7 +17,7 @@ E_A & = \frac{1}{1+10^{(R_B-R_A)/400}} \\
 \end{align}
 $$
 
-In this case, the probability of Player A winning the game is $VALUE. At the end of the game, the ‘actual result’ (S<sub>A</sub>) for Player A will be 1 for a win, 0 for a loss, or 0.5 for a tie. The difference between the actual result and the expected result is combined with a scaling factor ‘K’ to calculate the new rating for each player. The formula for that calculation look like this:
+In this case, the probability of Player A winning the game is 0.64. At the end of the game, the ‘actual result’ (S<sub>A</sub>) for Player A will be 1 for a win, 0 for a loss, or 0.5 for a tie. The difference between the actual result and the expected result is combined with a scaling factor ‘K’ to calculate the new rating for each player. The formula for that calculation look like this:
 
 $$
 R'_A=R_A+K(S_A-E_A)
