@@ -3,6 +3,8 @@ layout: post
 title: How To Deploy Meteor On Heroku
 ---
 
+**2021 Update: This is from 2016, proceed with caution. The mlab free tier doesn't exist anymore.**
+
 _This guide shows you how to quickly deploy a Meteor app to a free Heroku host with an mLab MongoDB. Enjoy!_
 
 **Make a Heroku account.** Go to heroku.com and create an account for yourself or your team. This heroku account gives you a free hosting allotment per month even without a credit card. The downside is that if no one has accessed your app within the last half hour or so then the server takes about 20 seconds to start up.
