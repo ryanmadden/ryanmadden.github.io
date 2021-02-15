@@ -1,0 +1,26 @@
+body {
+  color: #444;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 40px auto;
+  max-width: 650px;
+  padding: 0 10px;
+}
+
+h1,h2,h3 {
+  font-size: 21px;
+  line-height: 28px;
+  margin: 18px 0;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: 1px solid #ddd;
+  margin: 0;
+  padding: 0 16px;
+}
