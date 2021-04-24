@@ -33,3 +33,16 @@ blockquote p {
   margin: 0;
   padding: 8px 0;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 4px;
+}
+
+td p {
+  padding: 0;
+}
